@@ -74,7 +74,7 @@ public class TutorialInit : MonoBehaviour
 
         if (tutorialTexts.Count > 0)
         {
-            StartCoroutine(TypeText(tutorialTexts[currentTextIndex]));  // Iniciar el primer texto
+            StartCoroutine(TypeText(tutorialTexts[currentTextIndex]));
         }
     }
 }

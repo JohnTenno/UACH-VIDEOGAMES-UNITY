@@ -5,6 +5,7 @@ using UnityEngine;
 public class PauseResumen : MonoBehaviour
 {
     public GameObject panelPausa;
+    public GameObject dialog;
     public GameObject buttonResume;
     public bool tutorialPause = false;
 
@@ -13,15 +14,14 @@ public class PauseResumen : MonoBehaviour
     }
 
     public void pauseByTutorial() {
-         Debug.Log("raw");
         tutorialPause = true;
         pause();
     }
 
     public void resumeByTutorial() 
     {
-         Debug.Log("not raw");
         tutorialPause = false;
+        dialog.SetActive(false);
         resume();
     }
 
