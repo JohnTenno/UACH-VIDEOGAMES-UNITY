@@ -18,7 +18,7 @@ public class TurtleDispawn : MonoBehaviour
     {
         if (other.CompareTag("turtle"))
         {
-            Debug.Log("tortuga");
+            // Debug.Log("tortuga");
             Destroy(other.gameObject);
         }
     }

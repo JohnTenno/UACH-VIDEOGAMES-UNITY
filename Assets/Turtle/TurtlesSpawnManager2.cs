@@ -22,7 +22,7 @@ public class TurtlesSpawnManager2 : MonoBehaviour
             if (waitTime <= 0)
             {
 
-                Debug.Log("WaitTime: " + waitTime);
+                // Debug.Log("WaitTime: " + waitTime);
                 if (Random.value > 0.5f)
                 {
                     spawnPointR.Spawn();
