@@ -171,6 +171,7 @@ MonoBehaviour:
   isRightMovement: 1
   container: {fileID: 2004546134}
   turtlePrefab: {fileID: 7061065621812739056, guid: 43542529933d02b4f9aceffcd8288e64, type: 3}
+  jazirPrefab: {fileID: 7061065621812739056, guid: 2d853c5473c47904c8765376b0d72251, type: 3}
 --- !u!212 &55248067
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2424,6 +2425,7 @@ MonoBehaviour:
   isRightMovement: 0
   container: {fileID: 2004546134}
   turtlePrefab: {fileID: 7061065621812739056, guid: 43542529933d02b4f9aceffcd8288e64, type: 3}
+  jazirPrefab: {fileID: 7061065621812739056, guid: 2d853c5473c47904c8765376b0d72251, type: 3}
 --- !u!212 &1925477683
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TurtleSpawnPoint : MonoBehaviour
+public class JazirSpawn : MonoBehaviour
 {
     [SerializeField] protected bool isRightMovement = true;
     [SerializeField] protected Transform container;
 
     [SerializeField] protected GameObject turtlePrefab;
-    [SerializeField] protected GameObject jazirPrefab;
 
 
     public void Spawn()
@@ -23,25 +22,6 @@ public class TurtleSpawnPoint : MonoBehaviour
             turtlePrefab,
             position,
             turtlePrefab.transform.rotation,
-            container.transform
-        );
-
-        TurtleMovementFix turtleMovement = turtle.GetComponent<TurtleMovementFix>();
-        turtleMovement.isRightMovement = isRightMovement;
-    }
-
-    public void SpawnJazir() 
-    {
-        Vector3 position = new Vector3(
-            transform.position.x,
-            GetRandomHeightPosition(transform.position.y),
-            transform.position.z
-        );
-
-         GameObject turtle = Instantiate(
-            jazirPrefab,
-            position,
-            jazirPrefab.transform.rotation,
             container.transform
         );
 
