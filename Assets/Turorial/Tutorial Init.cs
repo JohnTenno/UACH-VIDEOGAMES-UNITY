@@ -6,32 +6,33 @@ using TMPro;
 public class TutorialInit : MonoBehaviour
 {
     public TextMeshProUGUI tutorialText;
-    public List<string> tutorialTexts;  // Lista de textos del tutorial
-    public float typingSpeed = 0.05f;  // Velocidad del efecto de tipeo
-    private int currentTextIndex = 0;  // Índice del texto actual
-    private bool isTyping = false;     // Bandera para saber si se está escribiendo
-    private bool textCompleted = false; // Bandera para saber si el texto ya terminó
-    [SerializeField] protected PauseResumen pauseGame; // Referencia al script de pausa
-    public float initialDelay = 0.5f;  // Tiempo de espera inicial antes de pausar el juego
+     public TextMeshProUGUI continueText;  
+    public List<string> tutorialTexts;  
+    public float typingSpeed = 0.05f; 
+    private int currentTextIndex = 0;  
+    private bool isTyping = false;   
+    private bool textCompleted = false;
+    [SerializeField] protected PauseResumen pauseGame; 
+    public float initialDelay = 0.5f; 
 
     void Start()
     {
-        StartCoroutine(StartTutorialWithDelay()); // Iniciar el tutorial con un delay
+        continueText.gameObject.SetActive(false);
+        StartCoroutine(StartTutorialWithDelay()); 
     }
 
     void Update()
     {
-        // Solo avanza si el texto ha sido completado y presionas Space
         if (Input.GetKeyDown(KeyCode.Space) && textCompleted)
         {
+            continueText.gameObject.SetActive(false);
             ShowNextText();
         }
     }
 
-    // Mostrar el siguiente texto en la lista
     void ShowNextText()
     {
-        if (!isTyping && textCompleted) // Verificamos que no esté escribiendo ni haya texto pendiente
+        if (!isTyping && textCompleted) 
         {
             currentTextIndex++;
             if (currentTextIndex < tutorialTexts.Count)
@@ -40,37 +41,33 @@ public class TutorialInit : MonoBehaviour
             }
             else
             {
-                // Limpiar el texto antes de reanudar
-                tutorialText.text = ""; // Limpiar el texto
-                pauseGame.resumeByTutorial();  // Reanudar el juego cuando el tutorial finaliza
+                tutorialText.text = ""; 
+                pauseGame.ResumeByTutorial();  
             }
         }
     }
 
-    // Efecto de tipeo del texto
     IEnumerator TypeText(string text)
     {
-        tutorialText.text = "";  // Limpiar el texto
-        isTyping = true;  // Indicar que el texto se está escribiendo
-        textCompleted = false;  // Texto aún no completado
+        tutorialText.text = "";  
+        isTyping = true;  
+        textCompleted = false; 
 
         foreach (char letter in text.ToCharArray())
         {
-            tutorialText.text += letter;  // Añadir cada letra una por una
-            yield return new WaitForSecondsRealtime(typingSpeed);  // Esperar el tiempo de tipeo
+            tutorialText.text += letter; 
+            yield return new WaitForSecondsRealtime(typingSpeed); 
         }
-
-        // Una vez completado el texto
-        textCompleted = true;  // Indicar que el texto ha sido completado
-        yield return new WaitForSecondsRealtime(1f);  // Esperar un segundo antes de avanzar
-        isTyping = false;  // Indicar que el texto ha terminado de escribirse
+        textCompleted = true;  
+        yield return new WaitForSecondsRealtime(1f); 
+        isTyping = false; 
+         continueText.gameObject.SetActive(true);
     }
 
-    // Iniciar el tutorial después de un tiempo de espera
     IEnumerator StartTutorialWithDelay()
     {
-        yield return new WaitForSecondsRealtime(initialDelay);  // Espera de medio segundo
-        pauseGame.pauseByTutorial();  // Pausar el juego después del delay
+        yield return new WaitForSecondsRealtime(initialDelay);  
+        pauseGame.PauseByTutorial(); 
 
         if (tutorialTexts.Count > 0)
         {

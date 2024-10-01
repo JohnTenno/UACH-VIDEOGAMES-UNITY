@@ -1,43 +1,78 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PauseResumen : MonoBehaviour
 {
-    public GameObject panelPausa;
-    public GameObject dialog;
-    public GameObject buttonResume;
-    public bool tutorialPause = false;
+    [Header("UI Elements")]
+    [SerializeField] private GameObject panelPausa;
+    [SerializeField] private GameObject dialog;
+    [SerializeField] private GameObject win;
+    [SerializeField] private GameObject dieSound;
+    [SerializeField] private GameObject gameSound;
+    [SerializeField] private GameObject winSound;
+    [SerializeField] private GameObject buttonResume;
 
-    void Start() {
-        resume();
+    private bool tutorialPause = false;
+
+    void Start()
+    {
+        ResumeGame();
     }
 
-    public void pauseByTutorial() {
+    public void PauseByTutorial()
+    {
         tutorialPause = true;
-        pause();
+        PauseGame();
     }
 
-    public void resumeByTutorial() 
+    public void ResumeByTutorial()
     {
         tutorialPause = false;
         dialog.SetActive(false);
-        resume();
+        ResumeGame();
     }
 
-    public void pause()
+    public void PauseByDie()
     {
-        if(!tutorialPause) {
-        buttonResume.SetActive(false);
-        panelPausa.SetActive(true);
-        }
-        Time.timeScale = 0;
+        ActivateSound(dieSound);
+        PauseGame();
     }
 
-    public void resume()
+    public void Win()
+    {
+        win.SetActive(true);
+        winSound.SetActive(true);
+        PauseGame();
+    }
+
+    public void PauseGame()
+    {
+        if (!tutorialPause)
+        {
+            buttonResume.SetActive(false);
+            panelPausa.SetActive(true);
+        }
+
+        SetTimeScale(0);
+        gameSound.SetActive(false);
+    }
+
+    public void ResumeGame()
     {
         buttonResume.SetActive(true);
         panelPausa.SetActive(false);
-        Time.timeScale = 1;
+        SetTimeScale(1);
+        gameSound.SetActive(true);
     }
+
+    private void SetTimeScale(float scale)
+    {
+        Time.timeScale = scale;
+    }
+
+    private void ActivateSound(GameObject soundObject)
+    {
+        soundObject.SetActive(true);
+    }
+
+
 }
