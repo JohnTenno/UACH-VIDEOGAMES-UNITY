@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f;        
-    public float rotationSpeed = 5f;     
+    public float moveSpeed = 5f;
+    public float rotationSpeed = 5f;
     private Rigidbody2D rb;
     public Animator pecaoAnimator;
     private Vector2 movement;
     private Vector2 screenBounds;
-    private CameraMovement cameraMovement; 
+    private CameraMovement cameraMovement;
     public GameObject diePanel;
     [SerializeField] protected PauseResumen pauseGame;
 
@@ -21,12 +21,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal"); 
-        movement.y = Input.GetAxisRaw("Vertical");   
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
         if (movement.magnitude > 1)
         {
             movement.Normalize();
-        } 
+        }
         rb.velocity = movement * moveSpeed;
 
         if (movement != Vector2.zero)
@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
         }
 
-        UpdateScreenBounds(); 
+        UpdateScreenBounds();
 
         Vector3 newPosition = rb.position;
         newPosition.x = Mathf.Clamp(newPosition.x, -screenBounds.x, screenBounds.x);
@@ -49,23 +49,78 @@ public class PlayerMovement : MonoBehaviour
     {
         if (cameraMovement != null)
         {
-            screenBounds = cameraMovement.GetScreenBounds(); 
+            screenBounds = cameraMovement.GetScreenBounds();
         }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-         if (other.CompareTag("turtle"))
-        {
+        if (other == null) return; 
 
-            Destroy(gameObject);
-            pauseGame.PauseByDie();
-            diePanel.SetActive(true);
-        }
-         if (other.CompareTag("pecao"))
+        switch (other.tag)
         {
-            pecaoAnimator.SetTrigger("pecaoMovement");
+            case "turtle":
+                HandleTurtleCollision();
+                break;
+
+            case "pecao":
+                HandlePecaoCollision();
+                break;
+
+            case "killBottom":
+                HandleKillBottomCollision();
+                break;
+
+            default:
+                Debug.LogWarning("Etiqueta no manejada: " + other.tag);
+                break;
         }
     }
 
+    void HandleTurtleCollision()
+    {
+        Destroy(gameObject); 
+        if (pauseGame != null)
+        {
+            pauseGame.PauseByDie();  
+        }
+
+        if (diePanel != null)
+        {
+            diePanel.SetActive(true); 
+        }
+        else
+        {
+            Debug.LogWarning("diePanel no está asignado.");
+        }
+    }
+
+    void HandlePecaoCollision()
+    {
+        if (pecaoAnimator != null)
+        {
+            pecaoAnimator.SetTrigger("pecaoMovement");
+        }
+        else
+        {
+            Debug.LogWarning("pecaoAnimator no está asignado.");
+        }
+    }
+
+
+    void HandleKillBottomCollision()
+    {
+        if (pauseGame != null)
+        {
+            pauseGame.PauseByDie();
+        }
+        if (diePanel != null)
+        {
+            diePanel.SetActive(true); 
+        }
+        else
+        {
+            Debug.LogWarning("pauseGame no está asignado.");
+        }
+    }
 }
