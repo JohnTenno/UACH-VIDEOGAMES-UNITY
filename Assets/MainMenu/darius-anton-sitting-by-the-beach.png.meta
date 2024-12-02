@@ -1,0 +1,831 @@
+fileFormatVersion: 2
+guid: 3710f475216a8af4b8f626a0a6fafcc9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10080
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480f90e2912405445a134970dfcffd59
+      internalID: -1495570431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_1
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 10080
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e07a2623023344bbf73b196e4d6338
+      internalID: -228271602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_2
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 10080
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5acbde991b257154ba2fd2d5bb9e3c6a
+      internalID: -1471409852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_3
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 10080
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c400d977f94c9fe4d9d4a98b9daf48b8
+      internalID: 1542072555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8640
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 423e249ee90bea4469b6dd8c12214ceb
+      internalID: -335283355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_5
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 8640
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41fd2fe07b561a94cb247f7d6d245971
+      internalID: -1462231431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_6
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 8640
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9bbb0a7c37bb394ca8f2ac0118eb89d
+      internalID: -850525737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_7
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 8640
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2171b034ea35a2d44af2f248d3eb8ae6
+      internalID: 1868410285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7200
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf7d60b656bb7f47af1743ed8fffdfb
+      internalID: 745101870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_9
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 7200
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70faadab8b0b92142830271af342a061
+      internalID: 141328638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_10
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 7200
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3589a5be70f2e7546917ebc7f008075d
+      internalID: -679780319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_11
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 7200
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b3cbdb3703f2c44fbec47e3d33457b2
+      internalID: 804135728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5760
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d71ac7e7ac6b16448e10bf950a2a8ca
+      internalID: 1230738798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_13
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 5760
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c926f3b1141bcb45a8f5d652a796f57
+      internalID: 106871839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_14
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 5760
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841d273515ab3e44487e838f6857222c
+      internalID: -409763541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_15
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 5760
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 387eb94204e88414c8018a23098b3dc5
+      internalID: -1656473381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4320
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f38d4ded0725484cb85c77f88682222
+      internalID: 733791800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_17
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 4320
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11e1e2a68d1afee4aa9bf84820e76f70
+      internalID: -550266771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_18
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 4320
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb6f83fc026f63242bd9ea79e4c84bd6
+      internalID: 854349826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_19
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 4320
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80dbd212d5ecb214c9bdd36db82a7cd6
+      internalID: -914424638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2880
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dd8af743e3aff34fa3e274ec50a73d8
+      internalID: 321675089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_21
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 2880
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe196ce0f1f621a4890013366d583b5c
+      internalID: 1192494034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_22
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 2880
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91714dbcb153aed41b25281005fc32d7
+      internalID: 4123227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_23
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 2880
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155c2568038f1c34b8df48b8e767f293
+      internalID: 1280528804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1440
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 388e5c1dfcdeda042837b7a4a512c2ee
+      internalID: 1243756952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_25
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 1440
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a953972bfba7fd04ca61a12bad3b52ab
+      internalID: -443803589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_26
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 1440
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c94f6d37406c8374c93708e72b007f95
+      internalID: -66630666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_27
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 1440
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc00c4449b99d14ea399fc0fa241708
+      internalID: -201443404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 254d3265311732c43922e29cdf715e71
+      internalID: -427283837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_29
+      rect:
+        serializedVersion: 2
+        x: 2560
+        y: 0
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9bd2085e99842e49b0e8985d237bc32
+      internalID: 794445472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_30
+      rect:
+        serializedVersion: 2
+        x: 5120
+        y: 0
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d75c1bf5282324d4f86c68672de600d6
+      internalID: -2080149374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: darius-anton-sitting-by-the-beach_31
+      rect:
+        serializedVersion: 2
+        x: 7680
+        y: 0
+        width: 2560
+        height: 1440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4251f706ed464a34083627838fb2bff9
+      internalID: -771448606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      darius-anton-sitting-by-the-beach_0: -1495570431
+      darius-anton-sitting-by-the-beach_1: -228271602
+      darius-anton-sitting-by-the-beach_10: -679780319
+      darius-anton-sitting-by-the-beach_11: 804135728
+      darius-anton-sitting-by-the-beach_12: 1230738798
+      darius-anton-sitting-by-the-beach_13: 106871839
+      darius-anton-sitting-by-the-beach_14: -409763541
+      darius-anton-sitting-by-the-beach_15: -1656473381
+      darius-anton-sitting-by-the-beach_16: 733791800
+      darius-anton-sitting-by-the-beach_17: -550266771
+      darius-anton-sitting-by-the-beach_18: 854349826
+      darius-anton-sitting-by-the-beach_19: -914424638
+      darius-anton-sitting-by-the-beach_2: -1471409852
+      darius-anton-sitting-by-the-beach_20: 321675089
+      darius-anton-sitting-by-the-beach_21: 1192494034
+      darius-anton-sitting-by-the-beach_22: 4123227
+      darius-anton-sitting-by-the-beach_23: 1280528804
+      darius-anton-sitting-by-the-beach_24: 1243756952
+      darius-anton-sitting-by-the-beach_25: -443803589
+      darius-anton-sitting-by-the-beach_26: -66630666
+      darius-anton-sitting-by-the-beach_27: -201443404
+      darius-anton-sitting-by-the-beach_28: -427283837
+      darius-anton-sitting-by-the-beach_29: 794445472
+      darius-anton-sitting-by-the-beach_3: 1542072555
+      darius-anton-sitting-by-the-beach_30: -2080149374
+      darius-anton-sitting-by-the-beach_31: -771448606
+      darius-anton-sitting-by-the-beach_4: -335283355
+      darius-anton-sitting-by-the-beach_5: -1462231431
+      darius-anton-sitting-by-the-beach_6: -850525737
+      darius-anton-sitting-by-the-beach_7: 1868410285
+      darius-anton-sitting-by-the-beach_8: 745101870
+      darius-anton-sitting-by-the-beach_9: 141328638
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 screenBounds;
     private CameraMovement cameraMovement;
     public GameObject diePanel;
+    public GameObject diePanelByBottomZone;
     [SerializeField] protected PauseResumen pauseGame;
 
     void Start()
@@ -114,9 +115,9 @@ public class PlayerMovement : MonoBehaviour
         {
             pauseGame.PauseByDie();
         }
-        if (diePanel != null)
+        if (diePanelByBottomZone != null)
         {
-            diePanel.SetActive(true); 
+            diePanelByBottomZone.SetActive(true); 
         }
         else
         {
