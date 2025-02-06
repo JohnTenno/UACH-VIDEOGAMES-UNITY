@@ -1,9 +1,12 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.EnhancedTouch;
 
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public float rotationSpeed = 5f;
+
     private Rigidbody2D rb;
     public Animator pecaoAnimator;
     private Vector2 movement;
@@ -11,25 +14,42 @@ public class PlayerMovement : MonoBehaviour
     private CameraMovement cameraMovement;
     public GameObject diePanel;
     public GameObject diePanelByBottomZone;
-    [SerializeField] protected PauseResumen pauseGame;
 
-    void Start()
+    [SerializeField] protected PauseResumen pauseGame;
+    [SerializeField] private InputActionReference moveActionToUse;
+    [SerializeField] private float speed;
+
+    private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         cameraMovement = FindObjectOfType<CameraMovement>();
+    }
+
+    private void OnEnable()
+    {
+        moveActionToUse.action.Enable();
+    }
+
+    private void OnDisable()
+    {
+        moveActionToUse.action.Disable();
+    }
+
+    private void Start()
+    {
         UpdateScreenBounds();
     }
 
-    void Update()
+    private void Update()
     {
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        movement = moveActionToUse.action.ReadValue<Vector2>();
+
         if (movement.magnitude > 1)
         {
             movement.Normalize();
         }
-        rb.velocity = movement * moveSpeed;
 
+ 
         if (movement != Vector2.zero)
         {
             float targetAngle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg - 90f;
@@ -38,15 +58,20 @@ public class PlayerMovement : MonoBehaviour
         }
 
         UpdateScreenBounds();
+    }
+
+    private void FixedUpdate()
+    {
+        rb.velocity = movement * moveSpeed; 
+
 
         Vector3 newPosition = rb.position;
         newPosition.x = Mathf.Clamp(newPosition.x, -screenBounds.x, screenBounds.x);
         newPosition.y = Mathf.Clamp(newPosition.y, -screenBounds.y, screenBounds.y);
-
         rb.position = newPosition;
     }
 
-    void UpdateScreenBounds()
+    private void UpdateScreenBounds()
     {
         if (cameraMovement != null)
         {
@@ -54,41 +79,34 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other == null) return; 
+        if (other == null) return;
 
         switch (other.tag)
         {
             case "turtle":
                 HandleTurtleCollision();
                 break;
-
             case "pecao":
                 HandlePecaoCollision();
                 break;
-
             case "killBottom":
                 HandleKillBottomCollision();
                 break;
-
             default:
                 Debug.LogWarning("Etiqueta no manejada: " + other.tag);
                 break;
         }
     }
 
-    void HandleTurtleCollision()
+    private void HandleTurtleCollision()
     {
-        Destroy(gameObject); 
-        if (pauseGame != null)
-        {
-            pauseGame.PauseByDie();  
-        }
-
+        Destroy(gameObject);
+        pauseGame?.PauseByDie();
         if (diePanel != null)
         {
-            diePanel.SetActive(true); 
+            diePanel.SetActive(true);
         }
         else
         {
@@ -96,7 +114,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void HandlePecaoCollision()
+    private void HandlePecaoCollision()
     {
         if (pecaoAnimator != null)
         {
@@ -108,16 +126,12 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-
-    void HandleKillBottomCollision()
+    private void HandleKillBottomCollision()
     {
-        if (pauseGame != null)
-        {
-            pauseGame.PauseByDie();
-        }
+        pauseGame?.PauseByDie();
         if (diePanelByBottomZone != null)
         {
-            diePanelByBottomZone.SetActive(true); 
+            diePanelByBottomZone.SetActive(true);
         }
         else
         {
